@@ -1,9 +1,9 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import ListItem from './ListItem'
 import ListCard from './ListCard'
 import EmojiList from '../emojiList.json'
 
-function List({itemNum, emojies, setEmojies, searchedEmoji}) {
+function List({ emojies, setEmojies, searchedEmoji}) {
 
     useEffect(() => {
       const results = EmojiList.filter(emoji => {
@@ -17,7 +17,7 @@ function List({itemNum, emojies, setEmojies, searchedEmoji}) {
       })
       .slice(0, 50);
       setEmojies(results);
-    }, [searchedEmoji])
+    }, [searchedEmoji, setEmojies])
     
 
   return (
@@ -25,7 +25,7 @@ function List({itemNum, emojies, setEmojies, searchedEmoji}) {
             <div className="w-96">
               {
                 emojies.map((value, key, array) => {return (
-                  <ListItem key={key} value={value} />
+                  <ListItem data-testid="listItem" key={key} value={value} />
                 )})
               }
               <ListCard />

@@ -1,5 +1,3 @@
-
-
 function ListCard() {
   return (
 
