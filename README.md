@@ -1,6 +1,6 @@
 # Emoji Search React App and tests :)
 
-![Emoji search app screenshot](.src/ss.png)
+![Emoji search app screenshot](./src/ss.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
