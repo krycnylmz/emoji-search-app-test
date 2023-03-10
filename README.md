@@ -1,6 +1,9 @@
 # Emoji Search React App and tests :)
 
-![Emoji search app screenshot](./src/ss.png)
+[You can check this demo!](https://emojifly.surge.sh/)
+
+![Emoji search app screenshot](./src/img/ss.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
